@@ -4,6 +4,10 @@ import SwiftUI
 struct StartnummernApp: App {
     @State private var store = BibStore()
 
+    init() {
+        BibFont.registerAll()
+    }
+
     var body: some Scene {
         WindowGroup {
             RootView()

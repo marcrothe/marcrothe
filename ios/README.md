@@ -15,8 +15,13 @@ Sie ist vor allem dafür da, **den Fototest** auf dem echten iPhone auszuprobier
   die App füllt Lauf, Strecke, Nummer und Datum aus und zeigt danach, was sie erkannt hat
 * Erfolge: Bestzeiten 5K, 10K, Halbmarathon, Marathon und drei Zahlen
 
-Noch nicht drin: Speichern über einen Neustart hinaus, Holo Effekte, Wippen, Glanz, Wackelmodus,
-die eigene Schrift HN Black Ext (bis dahin die breite Systemschrift).
+Die Startnummern verwenden **die Original Grafiken aus dem Entwurf** (Logo, Farben, Löcher) und die echten Schriften
+(Work Sans, Barlow Condensed, HN Black Ext). Nur Nummer, Name, Strecke und Zeit setzt die App darüber.
+Schon drin: Holo Rand bei Favoriten, Glanz mit festem Lichtwinkel.
+
+Noch nicht drin: Speichern über einen Neustart hinaus, Holo Wisch, Hochziehen für Favorit, Wippen, Wackelmodus,
+die Flug Animation nach dem Hinzufügen. Alle Werte dafür stehen in `design/DESIGN-SPEC.md`,
+Referenzbilder in `design/screens/`.
 
 ## Einrichten in Xcode (etwa 5 Minuten)
 
@@ -25,10 +30,13 @@ die eigene Schrift HN Black Ext (bis dahin die breite Systemschrift).
    Bei Team deine Apple ID wählen (Personal Team reicht zum Testen).
 3. Im neuen Projekt die beiden Dateien `ContentView.swift` und `StartnummernApp.swift` löschen
    (Move to Trash).
-4. Alle `.swift` Dateien aus dem Ordner `ios/Startnummern` dieses Repos in den Projektordner in Xcode ziehen.
-   Im Dialog **Copy items if needed** anhaken.
-5. Oben beim Projekt unter **General > Minimum Deployments** iOS **18.0** oder neuer einstellen.
-6. iPhone per Kabel anschließen, oben als Ziel auswählen und auf **Run** (das Dreieck) drücken.
+4. Den **ganzen Inhalt** des Ordners `ios/Startnummern` in den Projektordner in Xcode ziehen: alle `.swift` Dateien,
+   den Ordner `Fonts` und `Startnummern.xcassets`. Im Dialog **Copy items if needed** und das Ziel **Startnummern** anhaken.
+   Die Schriften werden beim Start automatisch geladen, ein Eintrag in der Info.plist ist nicht nötig.
+5. **Deine Schrift HN Black Ext:** die Datei `HelveticaNeueLTStd-BlkEx.otf` (liegt nur in der Zip, nicht im Repo) ebenfalls in den Ordner `Fonts` ziehen.
+   Ohne sie nimmt die App eine breite Systemschrift. Achtung: Für eine App im App Store braucht man für Helvetica Neue eine App Lizenz (Embedding).
+6. Oben beim Projekt unter **General > Minimum Deployments** iOS **18.0** oder neuer einstellen.
+7. iPhone per Kabel anschließen, oben als Ziel auswählen und auf **Run** (das Dreieck) drücken.
    Beim ersten Mal auf dem iPhone unter **Einstellungen > Allgemein > VPN und Geräteverwaltung**
    dem eigenen Entwicklerzertifikat vertrauen. Falls verlangt, unter **Datenschutz und Sicherheit**
    den **Entwicklermodus** einschalten.

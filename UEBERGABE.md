@@ -18,6 +18,10 @@ Er wurde in einer Cloud Sitzung erarbeitet. Diese Datei sagt einer neuen Claude 
 | `design/` | Der klickbare Entwurf als `.dc.html` Dateien (Start, Sammlung, Hinzufügen, Erfolge, Baustein Startnummer). Er ist die Vorlage für Aussehen und Verhalten. Online: https://claude.ai/artifact/7DQeT3dr8ngjfDXX2cXVDm |
 | `ios/Startnummern/` | Erste SwiftUI Fassung der App (noch nie kompiliert) |
 | `ios/README.md` | Anleitung, wie die Swift Dateien in ein Xcode Projekt kommen |
+| `design/DESIGN-SPEC.md` | **Alle Effekte mit genauen Werten** (Holo, Glanz, Wippen, Wackeln, Animationen) |
+| `design/screens/` | Referenzbilder aller Bildschirme aus dem Entwurf. Simulator Screenshots damit vergleichen |
+| `ios/Startnummern/Startnummern.xcassets` | Original Grafiken der Vorlagen, exportiert aus dem Entwurf |
+| `ios/Startnummern/Fonts` | Work Sans, Barlow Condensed. HN Black Ext liegt nur lokal bei Marc (Lizenz) |
 | `reports/`, `research_notes/` | Recherche „Gutes minimalistisches App Design“ |
 
 ## Nächste Schritte
@@ -26,7 +30,8 @@ Er wurde in einer Cloud Sitzung erarbeitet. Diese Datei sagt einer neuen Claude 
 2. **Bauen und Fehler beheben.** Der Code wurde ohne Mac geschrieben. Unsicher sind vor allem die neue Vision API (`RecognizeTextRequest`, `perform(on:orientation:)`, `boundingBox.height`) und einzelne SwiftUI Details.
 3. **Im Simulator zeigen**, damit Marc sieht, wie die App aussieht.
 4. **Fototest auf dem iPhone:** Hinzufügen, „Aus Foto“, Startnummer Foto wählen. Die App zeigt danach alle erkannten Texte nach Größe. Ziel: prüfen, ob Apples Texterkennung ohne KI reicht.
-5. Danach schrittweise den Entwurf nachziehen: eigene Schrift HN Black Ext (Datei bei Marc), Holo bei Favoriten, Glanz mit festem Lichtwinkel, Wippen beim langen Drücken, Wackelmodus, Animation nach dem Hinzufügen, Speichern mit SwiftData.
+5. **1:1 Abgleich:** Für jeden Bildschirm einen Simulator Screenshot (`xcrun simctl io booted screenshot`) neben das Referenzbild in `design/screens/` legen und Abweichungen beheben, bis es gleich aussieht.
+6. Danach schrittweise den Entwurf nachziehen (Werte in `design/DESIGN-SPEC.md`): eigene Schrift HN Black Ext (Datei bei Marc), Holo bei Favoriten, Glanz mit festem Lichtwinkel, Wippen beim langen Drücken, Wackelmodus, Animation nach dem Hinzufügen, Speichern mit SwiftData.
 
 ## Wichtige Entscheidungen in Kürze
 
