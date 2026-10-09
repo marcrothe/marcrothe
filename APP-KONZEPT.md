@@ -114,7 +114,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 ## Hinzufügen (eigene Seite, Entwurf vom 09.10.2026, zweite Fassung)
 
 - Der Reiter „Hinzufügen“ ist eine ganz normale Seite. Sie zeigt sofort ein Formular wie „Neues Ereignis“ im Apple Kalender, zuerst leer.
-- Oben steht als Platzhalter eine **klare, glatte Glasplatte mit vier Löchern** in Startnummernform (keine Körnung), mit Glanzstreifen. Die Ränder der vier Löcher sind Glaskanten wie der Außenrand: oben links heller, und wenn der Glanz vorbeizieht, leuchten Außenrand und Lochränder an dieser Stelle mit auf. Auf dem Glas erscheint nur der Lauf. Datum und Strecke stehen dort nicht. Die Platte wippt dabei langsam um die senkrechte Achse wie eine lange gedrückte Startnummer, der Glanz gleitet im selben Takt mit. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um. Beim Tippen der Zeit dreht er sich von selbst auf die Rückseite, wo die Zeit steht, beim Tippen von Nummer oder Name wieder nach vorn.
+- Oben steht als Platzhalter eine **klare, glatte Glasplatte mit vier Löchern** in Startnummernform (keine Körnung), mit Glanzstreifen. Die Ränder der vier Löcher sind Glaskanten wie der Außenrand: oben links heller, und wenn der Glanz vorbeizieht, leuchten Außenrand und Lochränder an dieser Stelle mit auf. Auf dem Glas steht nichts, auch kein Lauf oder Datum. Die Platte wippt dabei langsam um die senkrechte Achse wie eine lange gedrückte Startnummer, der Glanz gleitet im selben Takt mit. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um. Beim Tippen der Zeit dreht er sich von selbst auf die Rückseite, wo die Zeit steht, beim Tippen von Nummer oder Name wieder nach vorn.
 - Die Startnummer erscheint erst, wenn man eine Ziffer tippt. Auch das Präfix (zum Beispiel H) kommt erst mit der ersten Ziffer.
 - **Schrift passt sich an:** Jedes Feld der Vorlage hat eine feste Breite (Nummer, Name, Zeit auf der Rückseite, Strecke). Je länger der Text, desto kleiner die Schrift, damit er immer hineinpasst und auf derselben Grundlinie bleibt. Beispiel Citylauf: MARC groß, MAXIMILIAN kleiner.
 - Start und Sammlung zeigen immer die fertigen Startnummern. Die einsetzbaren Felder gibt es nur beim Hinzufügen.
@@ -128,10 +128,18 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
   5. **Name:** automatisch aus dem Profil, nur wenn die Vorlage einen Namen zeigt (MARC oder Marc), sonst „nicht aufgedruckt“.
   6. **Zeit:** optional, drei kleine Felder für Stunden, Minuten und Sekunden (h : mm : ss), Ziffern eintippen, nach zwei Ziffern springt der Cursor ins nächste Feld. Minuten oder Sekunden über 59 werden rot, dann lässt sich nicht speichern. Beim Tippen dreht sich die Vorschau auf die Rückseite mit der Zeit.
   - Das Jahr ergibt sich aus dem Datum.
-- „Zur Sammlung hinzufügen“ wird aktiv, sobald Datum, Lauf, Strecke und Startnummer da sind. Der Knopf ist dunkel mit roter Schrift (#FF123E), keine rote Fläche.
+- „Zur Sammlung hinzufügen“ erscheint erst, wenn Datum, Lauf, Strecke und Startnummer ausgefüllt sind (die Zeit ist optional). Vorher gibt es keinen ausgegrauten Knopf. Der Knopf ist dunkel mit roter Schrift (#FF123E).
+- **Animation beim Hinzufügen:** Das Formular zieht sich nach oben zusammen und verschwimmt. Dann fällt die fertige Startnummer von oben herein, wird größer, federt in der Bildmitte aus, dreht sich einmal auf die Rückseite (Zeit) und zurück. Dahinter blüht ein weicher Holo Schein auf, kleine bunte Funken fliegen heraus. Darunter erscheinen „In deiner Sammlung“, der Lauf in HN Black Ext und Datum, Strecke und Zeit. Danach wippt die Startnummer ruhig weiter. Bewusst ohne Holo Wisch, damit es sich vom Favoriten unterscheidet.
+- Beim Kulturhauptstadt-Lauf steht die Nummer immer mittig zwischen den beiden roten Streifen, auch wenn sie länger ist und kleiner wird.
 - Auch der fertige Nachbau in der Vorschau wippt langsam um die senkrechte Achse, mit mitlaufendem Glanz, genau wie beim langen Drücken.
 - **Aus Foto:** Glasknopf oben rechts. Foto aus Fotos wählen, „Wird erkannt …“, danach dasselbe Formular schon ausgefüllt und mit „erkannt“ markiert.
 - Technik: Apples Texterkennung (Vision und VisionKit, Live Text) läuft auf dem Gerät, mit der Kamera und mit Fotos aus der Mediathek, und kostet nichts.
+
+### Bearbeiten (Idee vom 09.10.2026, noch nicht gebaut)
+
+- In der Sammlung lange drücken, „Bearbeiten“ wählen: Es öffnet sich dieselbe Ansicht wie beim Hinzufügen, schon ausgefüllt, mit der echten Startnummer oben.
+- Oben „Bearbeiten“ statt „Hinzufügen“, Knopf „Fertig“ statt „Zur Sammlung hinzufügen“, ohne große Animation, nur ein kurzes Zurückfliegen in die Sammlung.
+- Typischer Fall: Zeit nachtragen, Tippfehler in der Nummer korrigieren.
 
 ## Hinzufügen per Foto (Technik im Hintergrund)
 
