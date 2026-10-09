@@ -69,7 +69,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 
 - Hält man nach dem Aufgehen des Menüs weiter gedrückt (oder tippt „Sammlung bearbeiten“), wackeln alle Startnummern der Sammlung leicht.
 - Jede Startnummer bekommt oben links ein kleines Glas Minus zum Entfernen, danach kommt die Glas Meldung mit „Rückgängig“.
-- Oben rechts steht dann statt des Zahnrads „Fertig“ als Glasknopf.
+- Beenden wie bei Apple: einfach irgendwo neben eine Startnummer tippen, oder oben rechts auf „Fertig“ (Glasknopf statt Zahnrad).
 
 ### Glanz auf den Startnummern
 
