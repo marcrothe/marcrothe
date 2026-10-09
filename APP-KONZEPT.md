@@ -114,7 +114,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 ## Hinzufügen (eigene Seite, Entwurf vom 09.10.2026, zweite Fassung)
 
 - Der Reiter „Hinzufügen“ ist eine ganz normale Seite. Sie zeigt sofort ein Formular wie „Neues Ereignis“ im Apple Kalender, zuerst leer.
-- Oben steht als Platzhalter eine **matte Glasplatte mit vier Löchern** in Startnummernform, mit Glanzstreifen. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um.
+- Oben steht als Platzhalter eine **matte Glasplatte mit vier Löchern** in Startnummernform, mit Glanzstreifen. Die Platte wippt dabei langsam um die senkrechte Achse wie eine lange gedrückte Startnummer, der Glanz gleitet im selben Takt mit. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um.
 - Zeilen von oben nach unten, die späteren sind ausgegraut, bis das Datum und dann der Lauf feststehen:
   1. **Datum:** Antippen öffnet Scrollräder wie bei Apple (Tag, Monat, Jahr). Kein Kalender.
   2. **Lauf:** zeigt gleich „1 Lauf an diesem Tag“. Antippen klappt die Läufe dieses Tages auf. Darunter „Lauf nicht dabei? Vorlage anfragen“.
