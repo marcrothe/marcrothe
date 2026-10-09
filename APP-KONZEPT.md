@@ -59,7 +59,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 
 - Lange auf eine Startnummer drücken (im Stapel und in der Sammlung, am Rechner auch Rechtsklick) öffnet ein Glasmenü wie bei Apple.
 - Beim Drücken gibt die Startnummer leicht nach, dann hebt sie sich an, der Rest wird abgedunkelt und unscharf.
-- Solange das Menü offen ist, schaukelt die angehobene Startnummer ganz leicht hin und her (etwa 1 Grad), wie die Symbole beim Bearbeiten des Home Bildschirms.
+- Solange das Menü offen ist, dreht sich die angehobene Startnummer langsam um die senkrechte Achse ein paar Grad nach links und rechts (etwa 7 Grad, ein Durchgang etwa 3,6 Sekunden).
 - Einträge: Zu Favoriten bzw. Aus Favoriten entfernen, Umdrehen, Bearbeiten, Teilen, Löschen (rot, mit Abstand darunter).
 - Löschen zeigt unten kurz eine Glas Meldung mit „Rückgängig“.
 - Das Menü ist auch der sichtbare zweite Weg zum Favoriten, neben dem Hochziehen.
