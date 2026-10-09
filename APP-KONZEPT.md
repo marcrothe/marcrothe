@@ -119,6 +119,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
   1. **Datum:** Antippen öffnet Scrollräder wie bei Apple (Tag, Monat, Jahr). Kein Kalender.
   2. **Lauf:** zeigt gleich „1 Lauf an diesem Tag“. Antippen klappt die Läufe dieses Tages auf. Darunter „Lauf nicht dabei? Vorlage anfragen“.
   3. **Strecke:** automatisch, wenn es nur eine gibt, sonst Auswahl mit Haken.
+     Beispiel: Beim Europäischen Kulturhauptstadt-Marathon Chemnitz (18.05.2025) gibt es Halbmarathon und Marathon. Beide teilen sich eine Grundvorlage, nur Streckenname, Laufband Text und Präfix der Nummer (H oder M) ändern sich. Nummer und Schrift bleiben mittig.
   4. **Startnummer:** direkt in der Zeile tippen, das Präfix der Vorlage (zum Beispiel H) steht schon davor.
   5. **Name:** automatisch aus dem Profil, nur wenn die Vorlage einen Namen zeigt (MARC oder Marc), sonst „nicht aufgedruckt“.
   6. **Zeit:** optional, Scrollräder für Stunden, Minuten und Sekunden. So sind unmögliche Werte wie 99 Sekunden ausgeschlossen.
