@@ -90,17 +90,20 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 
 ## Bezahlmodell
 
-- **Kostenlos:**
-  - Eintragen von Hand, unbegrenzt
-  - 10 Scans zum Start, für die alten Startnummern
-  - danach 2 Scans im Monat
-  - vorhandene Vorlagen nutzen, unbegrenzt
-- **Bezahlt:**
-  - unbegrenzt scannen
-  - Vorlagen anfragen, mit Vorrang
-  - später Extras, zum Beispiel Teilen als Bild
-- **Preis:** eher Jahresabo, etwa 10 bis 15 €, dazu Scan Pakete zum einmaligen Kauf (etwa 20 Scans für 3 €). Abwicklung über den App Store.
-- Begründung: Scans kosten fast nichts, Marcs Zeit für Vorlagen schon. Die Grenze darf den ersten Import der alten Startnummern nicht abwürgen.
+Grundsatz (Marc, 09.10.2026): Die App ist kostenlos. Bezahlt wird nur der Komfort, eine Startnummer per Foto automatisch einzuscannen. Damit unterstützen Nutzer die laufenden Kosten. Botschaft nach außen: „Ich will hier nicht das große Geld machen. Alles ist frei, nur der Scan kostet ein bisschen.“
+
+- **Kostenlos, für alle:**
+  - Startnummern von Hand eintragen, unbegrenzt
+  - alle Vorlagen nutzen, unbegrenzt
+  - Vorlagen anfragen (Foto hochladen), denn jede neue Vorlage hilft allen
+  - Stapel, Sammlung, Sortieren, Favoriten, Umdrehen, alles
+  - Vorschlag: 3 Scans zum Ausprobieren, damit jeder den Wow Moment einmal erlebt
+- **Bezahlt, nur der Scan:**
+  - Foto machen, alles wird automatisch erkannt und eingetragen
+  - besonders praktisch für den Import vieler alter Startnummern
+- **Preis:** klein halten. Zum Beispiel Jahresabo für etwa 10 €, oder Scan Pakete zum einmaligen Kauf (etwa 20 Scans für 3 €) für alle, die kein Abo wollen. Abwicklung über den App Store.
+- Ehrlich kommunizieren: Der einzelne Scan ist günstig, die Beiträge decken alles zusammen, also Entwicklerkonto, Vorlagen bauen, Server für die Vorlagen und Weiterentwicklung.
+- Teilnehmer von Partnerläufen können per QR Code ohnehin kostenlos importieren.
 
 ## Kosten
 
