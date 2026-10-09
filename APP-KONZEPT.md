@@ -111,22 +111,23 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Ein Tipp auf „Zur Sammlung“ lässt die Startnummer in den Stapel fliegen.
 - Muss sich vom Holo der Favoriten und von der Enthüllung einer fertigen Vorlage unterscheiden.
 
-## Hinzufügen (eigene Seite, Entwurf vom 09.10.2026)
+## Hinzufügen (eigene Seite, Entwurf vom 09.10.2026, zweite Fassung)
 
-- Der Reiter „Hinzufügen“ ist eine ganz normale Seite wie Start und Sammlung, kein Blatt von unten.
-- Darauf gibt es nur zwei Wege: **Foto hinzufügen** oder **Von Hand eintragen**. Keine Hinweise auf Preise oder Gratis Scans.
-- Von Hand, eine Frage nach der anderen, jede Antwort wandert als Zeile in eine Liste darüber und lässt sich antippen und ändern:
-  1. **Datum** zuerst (Kalender wie bei Apple, Punkte unter Tagen mit bekannten Läufen). Das Datum filtert die Läufe schon fast komplett.
-  2. **Lauf** aus den Läufen dieses Tages, mit kleiner Vorschau der Vorlage. Darunter „Lauf nicht dabei? Vorlage anfragen“.
-  3. **Strecke** nur, wenn der Lauf mehrere hat, sonst automatisch.
-  4. **Startnummer**, mit festem Präfix aus der Vorlage (zum Beispiel H beim Kulturhauptstadt Halbmarathon).
-  5. **Name** kommt automatisch aus dem Profil, in der Form, die die Vorlage zeigt (MARC, Marc oder gar nicht aufgedruckt).
-  6. **Zeit**, oder „Später eintragen“.
+- Der Reiter „Hinzufügen“ ist eine ganz normale Seite. Sie zeigt sofort ein Formular wie „Neues Ereignis“ im Apple Kalender, zuerst leer.
+- Oben steht als Platzhalter eine **matte Glasplatte mit vier Löchern** in Startnummernform, mit Glanzstreifen. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um.
+- Zeilen von oben nach unten, die späteren sind ausgegraut, bis das Datum und dann der Lauf feststehen:
+  1. **Datum:** Antippen öffnet Scrollräder wie bei Apple (Tag, Monat, Jahr). Kein Kalender.
+  2. **Lauf:** zeigt gleich „1 Lauf an diesem Tag“. Antippen klappt die Läufe dieses Tages auf. Darunter „Lauf nicht dabei? Vorlage anfragen“.
+  3. **Strecke:** automatisch, wenn es nur eine gibt, sonst Auswahl mit Haken.
+  4. **Startnummer:** direkt in der Zeile tippen, das Präfix der Vorlage (zum Beispiel H) steht schon davor.
+  5. **Name:** automatisch aus dem Profil, nur wenn die Vorlage einen Namen zeigt (MARC oder Marc), sonst „nicht aufgedruckt“.
+  6. **Zeit:** optional, Scrollräder für Stunden, Minuten und Sekunden. So sind unmögliche Werte wie 99 Sekunden ausgeschlossen.
   - Das Jahr ergibt sich aus dem Datum.
-- Oben baut sich dabei live der Nachbau auf, mit der eigenen Nummer. Antippen dreht ihn um (Rückseite zeigt die Zeit oder „Zeit noch offen“).
-- Foto hinzufügen: Foto aus Fotos wählen, „Wird erkannt …“, danach dieselbe Liste, nur schon ausgefüllt und mit „erkannt“ markiert. Es fehlt meist nur noch die Zeit.
-- Technik: Apples Texterkennung (Vision und VisionKit, Live Text) funktioniert auf dem Gerät, sowohl mit der Kamera als auch mit Fotos aus der Mediathek, und kostet nichts.
+- „Zur Sammlung hinzufügen“ wird aktiv, sobald Datum, Lauf, Strecke und Startnummer da sind.
+- **Aus Foto:** Glasknopf oben rechts. Foto aus Fotos wählen, „Wird erkannt …“, danach dasselbe Formular schon ausgefüllt und mit „erkannt“ markiert.
+- Technik: Apples Texterkennung (Vision und VisionKit, Live Text) läuft auf dem Gerät, mit der Kamera und mit Fotos aus der Mediathek, und kostet nichts.
 
+## Hinzufügen per Foto (Technik im Hintergrund)
 
 1. Plus antippen, Kamera öffnet sich.
 2. Apples Dokumentenscanner (VisionKit) erkennt die Kanten und richtet die Startnummer gerade. Kostenlos, auf dem Gerät.
