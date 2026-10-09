@@ -111,7 +111,22 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Ein Tipp auf „Zur Sammlung“ lässt die Startnummer in den Stapel fliegen.
 - Muss sich vom Holo der Favoriten und von der Enthüllung einer fertigen Vorlage unterscheiden.
 
-## Hinzufügen per Foto
+## Hinzufügen (eigene Seite, Entwurf vom 09.10.2026)
+
+- Der Reiter „Hinzufügen“ ist eine ganz normale Seite wie Start und Sammlung, kein Blatt von unten.
+- Darauf gibt es nur zwei Wege: **Foto hinzufügen** oder **Von Hand eintragen**. Keine Hinweise auf Preise oder Gratis Scans.
+- Von Hand, eine Frage nach der anderen, jede Antwort wandert als Zeile in eine Liste darüber und lässt sich antippen und ändern:
+  1. **Datum** zuerst (Kalender wie bei Apple, Punkte unter Tagen mit bekannten Läufen). Das Datum filtert die Läufe schon fast komplett.
+  2. **Lauf** aus den Läufen dieses Tages, mit kleiner Vorschau der Vorlage. Darunter „Lauf nicht dabei? Vorlage anfragen“.
+  3. **Strecke** nur, wenn der Lauf mehrere hat, sonst automatisch.
+  4. **Startnummer**, mit festem Präfix aus der Vorlage (zum Beispiel H beim Kulturhauptstadt Halbmarathon).
+  5. **Name** kommt automatisch aus dem Profil, in der Form, die die Vorlage zeigt (MARC, Marc oder gar nicht aufgedruckt).
+  6. **Zeit**, oder „Später eintragen“.
+  - Das Jahr ergibt sich aus dem Datum.
+- Oben baut sich dabei live der Nachbau auf, mit der eigenen Nummer. Antippen dreht ihn um (Rückseite zeigt die Zeit oder „Zeit noch offen“).
+- Foto hinzufügen: Foto aus Fotos wählen, „Wird erkannt …“, danach dieselbe Liste, nur schon ausgefüllt und mit „erkannt“ markiert. Es fehlt meist nur noch die Zeit.
+- Technik: Apples Texterkennung (Vision und VisionKit, Live Text) funktioniert auf dem Gerät, sowohl mit der Kamera als auch mit Fotos aus der Mediathek, und kostet nichts.
+
 
 1. Plus antippen, Kamera öffnet sich.
 2. Apples Dokumentenscanner (VisionKit) erkennt die Kanten und richtet die Startnummer gerade. Kostenlos, auf dem Gerät.
