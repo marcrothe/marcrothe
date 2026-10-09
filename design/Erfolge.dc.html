@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Erfolge</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+@font-face{font-family:"HN Black Ext";src:url("/_blob/49b7dff1c66c64469fceeac303f95824") format("opentype");font-weight:800 900;font-style:normal;font-display:swap}
+body{margin:0;background:#000}
+a{color:#8a8a99}a:hover{color:#FF123E}
+button{font:inherit}
+@keyframes glSwing{0%{transform:translateX(-54px)}100%{transform:translateX(6px)}}
+@keyframes glJig{0%{transform:rotate(1.2deg) translateX(-24px)}100%{transform:rotate(-1.2deg) translateX(-24px)}}
+@keyframes medalSpin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.medalRing{animation:medalSpin 12s linear infinite}
+@media (prefers-reduced-motion: reduce){.medalRing{animation:none}}
+</style>
+</helmet>
+<div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #000000; color: #ffffff; font-family: 'Work Sans', sans-serif; overflow: hidden">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 28px 20px 4px">
+<h1 style="margin: 0; font-family: 'HN Black Ext', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; letter-spacing: -0.01em; color: #ffffff">Erfolge</h1>
+<button type="button" aria-label="Einstellungen" style="flex: none; width: 40px; height: 40px; padding: 0; display: grid; place-items: center; border-radius: 999px; border: 0.5px solid rgba(255, 255, 255, 0.18); background: rgba(44, 44, 52, 0.62); backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%); color: #ffffff; cursor: pointer">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+</button>
+</header>
+
+<main style="flex-grow: 1; overflow-y: auto; padding: 8px 20px 130px">
+
+<section style="display: flex; flex-direction: column; gap: 18px; padding-top: 22px">
+<h2 style="margin: 0; font-family: 'HN Black Ext', sans-serif; font-weight: 900; font-size: 18px; line-height: 1; color: #8a8a99">Bestzeiten</h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 18px; row-gap: 28px">
+<sc-for list="{{pbs}}" as="pb" hint-placeholder-count="4">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 12px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: #8a8a99">{{pb.cat}}</span>
+<div style="height: 130px; width: 100%; display: flex; align-items: center; justify-content: center">
+<sc-if value="{{pb.has}}" hint-placeholder-val="{{true}}">
+<button type="button" onClick="{{pb.flip}}" aria-label="{{pb.aria}}" style="padding: 0; border: 0; background: transparent; cursor: pointer; line-height: 0">
+<dc-import name="Bib" which="{{pb.id}}" w="150" flipped="{{pb.back}}" fav="{{pb.fav}}" hint-size="150px,106px"></dc-import>
+</button>
+</sc-if>
+<sc-if value="{{pb.none}}" hint-placeholder-val="{{false}}">
+<div style="width: 150px; line-height: 0">
+<svg viewBox="0 0 108 76" width="100%" role="img" aria-label="Noch offen" style="display: block">
+<defs>
+<mask id="erMask" maskUnits="userSpaceOnUse" x="0" y="0" width="108" height="76"><rect width="108" height="76" rx="2.4" fill="#fff"></rect><circle cx="5.5" cy="5.5" r="1.9" fill="#000"></circle><circle cx="102.5" cy="5.5" r="1.9" fill="#000"></circle><circle cx="5.5" cy="70.5" r="1.9" fill="#000"></circle><circle cx="102.5" cy="70.5" r="1.9" fill="#000"></circle></mask>
+<linearGradient id="erFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.12"></stop><stop offset="0.55" stop-color="#ffffff" stop-opacity="0.05"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="0.09"></stop></linearGradient>
+<linearGradient id="erGloss" gradientUnits="userSpaceOnUse" x1="22" y1="0" x2="86" y2="34"><stop offset="0" stop-color="#ffffff" stop-opacity="0"></stop><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.14"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="0"></stop></linearGradient>
+<linearGradient id="erEdge" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.42"></stop><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.14"></stop><stop offset="1" stop-color="#ffffff" stop-opacity="0.3"></stop></linearGradient>
+</defs>
+<g mask="url(#erMask)"><rect width="108" height="76" fill="url(#erFill)"></rect><rect x="-108" y="-76" width="324" height="228" fill="url(#erGloss)" style="transform-box: view-box; transform-origin: 54px 38px; transform: translateX(-24px)"></rect></g>
+<g fill="none" stroke="url(#erEdge)" stroke-width="0.4"><rect x="0.2" y="0.2" width="107.6" height="75.6" rx="2.3"></rect><circle cx="5.5" cy="5.5" r="1.9"></circle><circle cx="102.5" cy="5.5" r="1.9"></circle><circle cx="5.5" cy="70.5" r="1.9"></circle><circle cx="102.5" cy="70.5" r="1.9"></circle></g>
+</svg>
+</div>
+</sc-if>
+</div>
+<span style="font-size: 12px; font-weight: 600; line-height: 1.3; white-space: nowrap; color: {{pb.lineColor}}">{{pb.line}}</span>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-top: 52px; text-align: center">
+<sc-for list="{{stats}}" as="st" hint-placeholder-count="3">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 8px">
+<span style="font-family: 'HN Black Ext', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; color: #ffffff">{{st.value}}</span>
+<span style="font-size: 12px; font-weight: 600; color: #8a8a99">{{st.label}}</span>
+</div>
+</sc-for>
+</section>
+
+</main>
+
+<nav aria-label="Hauptmenü" style="position: absolute; left: 14px; right: 14px; bottom: 24px; z-index: 60; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: center; gap: 2px; padding: 5px; border-radius: 999px; background: rgba(44, 44, 52, 0.62); backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%); border: 0.5px solid rgba(255, 255, 255, 0.18); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); transition: all 0.3s ease">
+<a href="Stapel.dc.html" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600; transition: all 0.3s ease">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="8" width="15" height="11" rx="1.5"></rect><path d="M7 5H19.5A1.5 1.5 0 0 1 21 6.5V15"></path></svg>
+<span style="display: block">Start</span></a>
+<a href="Main.dc.html" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600; transition: all 0.3s ease">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg>
+<span style="display: block">Sammlung</span></a>
+<a href="Add.dc.html" style="min-height: 52px; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border: 0; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600; transition: all 0.3s ease">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8V16M8 12H16"></path></svg>
+<span style="display: block">Hinzufügen</span></a>
+<a href="Erfolge.dc.html" aria-current="page" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; background: rgba(255, 255, 255, 0.13); color: #FF123E; text-decoration: none; font-size: 10px; font-weight: 600; transition: all 0.3s ease">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4H16V9A4 4 0 0 1 8 9Z"></path><path d="M8 6H5V7A3 3 0 0 0 8 10"></path><path d="M16 6H19V7A3 3 0 0 1 16 10"></path><path d="M12 13V17M8 20H16M10 17H14"></path></svg>
+<span style="display: block">Erfolge</span></a>
+<a href="#" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600; transition: all 0.3s ease">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20C5.5 16.5 8.5 15 12 15C15.5 15 18.5 16.5 20 20"></path></svg>
+<span style="display: block">Profil</span></a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+var BIBS = [
+{ id: 'kh', name: 'Halbmarathon Chemnitz', city: 'Chemnitz', date: '2025-05-18', km: 21.1, cat: 'hm', time: '1:29:17' },
+{ id: 'cl', name: 'Citylauf Dresden', city: 'Dresden', date: '2025-03-23', km: 5, cat: '5k', time: '18:54' },
+{ id: 'dm', name: 'Viertelmarathon Dresden', city: 'Dresden', date: '2024-10-27', km: 10.55, cat: 'vm', time: '40:19' }
+];
+function secs(t) { var p = t.split(':').map(Number); return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1]; }
+function fmtD(d) { return d.slice(8, 10) + '.' + d.slice(5, 7) + '.' + d.slice(0, 4); }
+function km(v) { return String(Math.round(v * 10) / 10).replace('.', ','); }
+class Component extends DCLogic {
+constructor(props) { super(props); this.state = { back: {} }; }
+renderVals() {
+var self = this, s = this.state;
+var CATS = [{ k: '5k', label: '5K' }, { k: '10k', label: '10K' }, { k: 'hm', label: 'HALBMARATHON' }, { k: 'm', label: 'MARATHON' }];
+var pbs = CATS.map(function (c) {
+var list = BIBS.filter(function (b) { return b.cat === c.k && b.time; }).sort(function (a, b) { return secs(a.time) - secs(b.time); });
+var b = list[0];
+if (!b) return { cat: c.label, has: false, none: true, line: 'noch offen', lineColor: '#5a5a66', id: 'kh', back: false, fav: false, aria: '', flip: function () {} };
+var back = !!s.back[c.k];
+return { cat: c.label, has: true, none: false, id: b.id, back: back, fav: b.id === 'cl', line: b.time + ' | ' + b.city, lineColor: '#8a8a99', aria: c.label + ' Bestzeit ' + b.time + ', ' + b.name + ', antippen zum Umdrehen',
+flip: function () { var n = Object.assign({}, self.state.back); n[c.k] = !back; self.setState({ back: n }); } };
+});
+var total = BIBS.reduce(function (a, b) { return a + b.km; }, 0), cities = {};
+BIBS.forEach(function (b) { cities[b.city] = 1; });
+var stats = [
+{ value: String(BIBS.length), label: 'Startnummern' },
+{ value: km(total), label: 'Wettkampf km' },
+{ value: String(Object.keys(cities).length), label: 'Städte' }
+];
+return { pbs: pbs, stats: stats };
+}
+}
+</script>
+</body>
+</html>

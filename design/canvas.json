@@ -1,0 +1,81 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Bib.dc.html": {
+      "h": 212,
+      "title": "Baustein Startnummer",
+      "w": 300,
+      "x": 0,
+      "y": 964
+    },
+    "Fav1.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "Favorit mit Stern und Holo",
+      "w": 390,
+      "x": 0,
+      "y": 1480
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "Raster",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    },
+    "Stapel.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "Stapel (Start)",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "Add.dc.html": {
+      "x": 940,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Hinzufügen",
+      "is_interactive": true
+    },
+    "Erfolge.dc.html": {
+      "x": 1410,
+      "y": 0,
+      "w": 390,
+      "h": 844,
+      "title": "Erfolge",
+      "is_interactive": true
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-09T07:30:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "favoriten": {
+      "kind": "title1",
+      "maxW": 860,
+      "text": "Favoriten: hochziehen",
+      "w": 240,
+      "x": 0,
+      "y": 1230
+    }
+  },
+  "order": [
+    "Stapel.dc.html",
+    "Main.dc.html",
+    "Add.dc.html",
+    "Erfolge.dc.html",
+    "Bib.dc.html",
+    "Fav1.dc.html"
+  ],
+  "pages": [],
+  "title": "Startnummern App"
+}

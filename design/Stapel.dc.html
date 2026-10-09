@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Startnummern Stapel</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+@font-face{font-family:"HN Black Ext";src:url("/_blob/49b7dff1c66c64469fceeac303f95824") format("opentype");font-weight:800 900;font-style:normal;font-display:swap}
+body{margin:0;background:#000}
+a{color:#8a8a99}a:hover{color:#FF123E}
+button{font:inherit}
+@keyframes holoSweep{0%{background-position:130% 0;opacity:0}12%{opacity:1}80%{opacity:1}100%{background-position:-30% 0;opacity:0}}
+.plain{color:#8a8a99}
+.holotext{color:transparent;background-image:linear-gradient(100deg,#ffffff 0%,#e3f4fc 14%,#ffffff 26%,#ece4ff 38%,#ffffff 50%,#dcfff6 62%,#ffffff 74%,#ffe6f3 86%,#ffffff 100%);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;transition:background-position 0.25s ease-out}
+@keyframes menuPop{0%{opacity:0;transform:scale(0.55)}60%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.menuIn{animation:menuPop 0.32s cubic-bezier(0.25, 1.35, 0.4, 1) both}
+@keyframes ctxFade{from{opacity:0}to{opacity:1}}
+@keyframes ctxLift{0%{transform:scale(0.96)}100%{transform:scale(1.08)}}
+@keyframes toastIn{0%{opacity:0;transform:translate(-50%,14px) scale(0.96)}100%{opacity:1;transform:translate(-50%,0) scale(1)}}
+.ctxFade{animation:ctxFade 0.25s ease both}
+.ctxLift{animation:ctxLift 0.4s cubic-bezier(0.25, 1.35, 0.4, 1) both}
+@keyframes glSwing{0%{transform:translateX(-54px)}100%{transform:translateX(6px)}}
+@keyframes glJig{0%{transform:rotate(1.2deg) translateX(-24px)}100%{transform:rotate(-1.2deg) translateX(-24px)}}
+@keyframes ctxWiggle{0%{transform:perspective(900px) rotateY(-7deg)}100%{transform:perspective(900px) rotateY(7deg)}}
+.ctxWiggle{transform-origin:50% 50%;animation:ctxWiggle 1.8s cubic-bezier(0.37, 0, 0.63, 1) -0.9s infinite alternate}
+.toastIn{transform:translateX(-50%);animation:toastIn 0.32s cubic-bezier(0.25, 1.35, 0.4, 1) both}
+@keyframes editIn{0%{opacity:0;transform:translateY(40px)}100%{opacity:1;transform:none}}
+.editIn{animation:editIn 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) both}
+@keyframes editOut{0%{opacity:1;transform:none}100%{opacity:0;transform:translateY(60px) scale(0.96)}}
+.editOut{animation:editOut 0.3s ease-in forwards}
+@keyframes savedPop{0%{transform:scale(0.9)}55%{transform:scale(1.05)}100%{transform:scale(1)}}
+.savedPop{animation:savedPop 0.6s cubic-bezier(0.25, 1.35, 0.4, 1) both}
+.bibBtn{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+@media (prefers-reduced-motion: reduce){.holo{animation-duration:0.01s!important}.menuIn,.ctxLift,.ctxFade,.toastIn,.ctxWiggle{animation:none}}
+</style>
+</helmet>
+<div data-ctxroot="1" style="position: relative; width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #000000; color: #ffffff; font-family: 'Work Sans', sans-serif; overflow: hidden">
+
+<header style="display: flex; flex-direction: column; gap: 4px; padding: 28px 20px 4px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<h1 style="margin: 0; font-family: 'HN Black Ext', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; letter-spacing: -0.01em; color: #ffffff">Startnummern</h1>
+<button type="button" aria-label="Einstellungen" style="flex: none; width: 40px; height: 40px; padding: 0; display: grid; place-items: center; border-radius: 999px; border: 0.5px solid rgba(255, 255, 255, 0.18); background: rgba(44, 44, 52, 0.62); backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%); color: #ffffff; cursor: pointer">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+</button>
+</div>
+<p style="margin: 0; min-height: 44px; display: flex; align-items: center; font-size: 13px; font-weight: 500; color: #8a8a99">Wischen zum Blättern, hochziehen für Favorit</p>
+</header>
+
+<main onPointerMove="{{onHover}}" style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; padding: 0 20px">
+<div style="position: relative; width: 100%; height: 400px">
+
+
+<sc-for list="{{cards}}" as="c" hint-placeholder-count="3">
+<button type="button" class="bibBtn" onClick="{{c.tap}}" onContextMenu="{{c.ctx}}" onPointerDown="{{c.down}}" onPointerMove="{{c.move}}" onPointerUp="{{c.up}}" onPointerCancel="{{c.up}}" aria-label="{{c.label}}" style="position: absolute; left: 50%; top: 54%; width: 300px; padding: 0; border: 0; background: transparent; cursor: grab; touch-action: none; line-height: 0; transform: {{c.t}}; z-index: {{c.z}}; transition: {{c.tr}}; pointer-events: {{c.pe}}; opacity: {{c.op}}">
+<dc-import name="Bib" which="{{c.id}}" w="300" flipped="{{c.flipped}}" fav="{{c.isFav}}" shine="{{shine}}" tilt="{{c.rot}}" gtr="{{c.tr}}" custom="{{c.custom}}" num="{{c.num}}" runner="{{c.runner}}" time="{{c.time}}" hint-size="300px,212px"></dc-import>
+<span aria-hidden="true" style="position: absolute; left: 50%; bottom: 100%; margin-bottom: 12px; transform: translateX(-50%) scale({{c.hintScale}}); opacity: {{c.hintOpacity}}; color: {{c.hintColor}}; line-height: 0; pointer-events: none; transition: transform 0.15s ease, color 0.15s ease">
+<svg viewBox="0 0 24 24" width="26" height="26" fill="{{c.hintFill}}" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"><path d="M12 3.5L14.6 9L20.5 9.6L16 13.6L17.3 19.5L12 16.5L6.7 19.5L8 13.6L3.5 9.6L9.4 9Z"></path></svg>
+</span>
+<sc-if value="{{c.holo}}" hint-placeholder-val="{{false}}">
+<span class="holo" aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; mix-blend-mode: hard-light; background-image: linear-gradient(115deg, rgba(255,255,255,0) 18%, rgba(146,214,243,0.85) 30%, rgba(125,73,255,0.75) 40%, rgba(4,248,204,0.8) 50%, rgba(251,95,187,0.7) 60%, rgba(255,214,90,0.65) 68%, rgba(255,255,255,0) 82%); background-size: 280% 100%; background-repeat: no-repeat; animation: holoSweep 1.15s cubic-bezier(0.4, 0, 0.2, 1) forwards"></span>
+</sc-if>
+</button>
+</sc-for>
+
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center; margin-top: 6px">
+<span style="flex: none; display: flex; align-items: center; overflow: hidden; width: {{starW}}px; opacity: {{starO}}; transition: width 0.4s cubic-bezier(0.3, 0.7, 0.2, 1), opacity 0.3s ease">
+<svg viewBox="0 0 24 24" width="14" height="14" aria-label="Favorit" style="flex: none; display: block; margin-right: 6px; transform: scale({{starS}}) rotate({{starR}}deg); transition: transform 0.45s cubic-bezier(0.3, 1.6, 0.5, 1)"><defs><linearGradient id="stStarG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3f4fc"></stop><stop offset=".35" stop-color="#ffffff"></stop><stop offset=".65" stop-color="#ece4ff"></stop><stop offset="1" stop-color="#dcfff6"></stop></linearGradient></defs><path d="M12 3.5L14.6 9L20.5 9.6L16 13.6L17.3 19.5L12 16.5L6.7 19.5L8 13.6L3.5 9.6L9.4 9Z" fill="url(#stStarG)" stroke="url(#stStarG)" stroke-width="2" stroke-linejoin="miter"></path></svg>
+</span>
+<span style="position: relative; display: inline-block; font-size: 13px; font-weight: 600; line-height: 1.3; white-space: nowrap">
+<span style="color: #8a8a99; opacity: {{plainO}}; transition: opacity 0.45s ease">{{line}}</span>
+<span class="holotext" aria-hidden="true" style="position: absolute; left: 0; top: 0; opacity: {{holoO}}; transition: opacity 0.45s ease, background-position 0.25s ease-out; background-position: {{shine}}% 0">{{line}}</span>
+</span>
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 22px">
+<button type="button" onClick="{{prev}}" aria-label="Vorherige Startnummer" style="width: 44px; height: 44px; display: grid; place-items: center; border: 0; background: transparent; color: #8a8a99; cursor: pointer; padding: 0">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M15 5L8 12L15 19"></path></svg>
+</button>
+<div style="display: flex; gap: 8px" aria-label="{{count}}">
+<sc-for list="{{dots}}" as="d" hint-placeholder-count="3">
+<span style="width: 8px; height: 8px; background: {{d.bg}}; transition: background 0.2s ease"></span>
+</sc-for>
+</div>
+<button type="button" onClick="{{next}}" aria-label="Nächste Startnummer" style="width: 44px; height: 44px; display: grid; place-items: center; border: 0; background: transparent; color: #8a8a99; cursor: pointer; padding: 0">
+<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M9 5L16 12L9 19"></path></svg>
+</button>
+</div>
+</main>
+
+
+<nav aria-label="Hauptmenü" style="position: absolute; left: 14px; right: 14px; bottom: 24px; z-index: 60; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: center; gap: 2px; padding: 5px; border-radius: 999px; background: rgba(44, 44, 52, 0.62); backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%); border: 0.5px solid rgba(255, 255, 255, 0.18); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5)">
+<a href="Stapel.dc.html" aria-current="page" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; background: rgba(255, 255, 255, 0.13); color: #FF123E; text-decoration: none; font-size: 10px; font-weight: 600">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="8" width="15" height="11" rx="1.5"></rect><path d="M7 5H19.5A1.5 1.5 0 0 1 21 6.5V15"></path></svg>
+Start</a>
+<a href="Main.dc.html" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"></rect><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"></rect><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"></rect></svg>
+Sammlung</a>
+<a href="Add.dc.html" style="min-height: 52px; padding: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border: 0; border-radius: 999px; background: transparent; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8V16M8 12H16"></path></svg>
+Hinzufügen</a>
+<a href="Erfolge.dc.html" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4H16V9A4 4 0 0 1 8 9Z"></path><path d="M8 6H5V7A3 3 0 0 0 8 10"></path><path d="M16 6H19V7A3 3 0 0 1 16 10"></path><path d="M12 13V17M8 20H16M10 17H14"></path></svg>
+Erfolge</a>
+<a href="#" style="min-height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 999px; color: #d6d6de; text-decoration: none; font-size: 10px; font-weight: 600">
+<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20C5.5 16.5 8.5 15 12 15C15.5 15 18.5 16.5 20 20"></path></svg>
+Profil</a>
+</nav>
+
+<sc-if value="{{ctxOn}}" hint-placeholder-val="{{false}}">
+<div onPointerUp="{{ctxUp}}" onPointerCancel="{{ctxUp}}" style="position: absolute; inset: 0; z-index: 80">
+<button type="button" onClick="{{closeCtx}}" aria-label="Menü schließen" class="ctxFade" style="position: absolute; inset: 0; border: 0; padding: 0; background: rgba(0, 0, 0, 0.42); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); cursor: default"></button>
+<div aria-hidden="true" class="ctxLift" style="position: absolute; left: {{ctxX}}px; top: {{ctxY}}px; width: {{ctxW}}px; line-height: 0; pointer-events: none; filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.6))">
+<div class="ctxWiggle">
+<dc-import name="Bib" which="{{ctxId}}" w="{{ctxW}}" flipped="{{ctxFlipped}}" fav="{{ctxFav}}" shine="{{shine}}" swing="{{true}}" custom="{{ctxCustom}}" num="{{ctxNum}}" runner="{{ctxRunner}}" time="{{ctxTime}}" hint-size="150px,106px"></dc-import>
+</div>
+</div>
+<div role="menu" aria-label="{{ctxName}}" class="menuIn" style="position: absolute; left: {{ctxMX}}px; top: {{ctxMY}}px; z-index: 2; width: 250px; overflow: hidden; border-radius: 24px; background: rgba(48, 48, 56, 0.72); backdrop-filter: blur(30px) saturate(180%); -webkit-backdrop-filter: blur(30px) saturate(180%); border: 0.5px solid rgba(255, 255, 255, 0.16); box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Work Sans', sans-serif; transform-origin: {{ctxOrigin}}">
+<sc-for list="{{ctxItems}}" as="a" hint-placeholder-count="5">
+<button type="button" role="menuitem" onClick="{{a.act}}" style="width: 100%; min-height: 48px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 18px; border: 0; border-top: {{a.bt}}; border-radius: 0; background: transparent; color: {{a.color}}; cursor: pointer; text-align: left; font-family: inherit; font-size: 17px; font-weight: 400; line-height: 1.2">
+<span>{{a.label}}</span>
+<svg viewBox="0 0 24 24" width="20" height="20" fill="{{a.fill}}" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><path d="{{a.d}}"></path></svg>
+</button>
+</sc-for>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{undoOn}}" hint-placeholder-val="{{false}}">
+<div role="status" class="toastIn" style="position: absolute; left: 50%; bottom: 104px; z-index: 70; display: flex; align-items: center; gap: 14px; padding: 8px 8px 8px 18px; white-space: nowrap; border-radius: 999px; background: rgba(44, 44, 52, 0.62); backdrop-filter: blur(22px) saturate(180%); -webkit-backdrop-filter: blur(22px) saturate(180%); border: 0.5px solid rgba(255, 255, 255, 0.18); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Work Sans', sans-serif; font-size: 15px">
+<span style="color: #ffffff">Startnummer gelöscht</span>
+<button type="button" onClick="{{undo}}" style="min-height: 36px; padding: 0 14px; border: 0; border-radius: 999px; background: rgba(255, 255, 255, 0.13); color: #FF123E; cursor: pointer; font-family: inherit; font-size: 15px; font-weight: 600">Rückgängig</button>
+</div>
+</sc-if>
+
+<sc-if value="{{editOn}}" hint-placeholder-val="{{false}}">
+<div class="{{editCls}}" style="position: absolute; inset: 0; z-index: 90; background: #000000">
+<dc-import name="Add" seed="{{editSeed}}" done-cb="{{doneCb}}" cancel-cb="{{cancelCb}}" hint-size="390px,844px"></dc-import>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+this.state = { top: 0, dx: 0, dy: 0, drag: false, axis: null, flip: {}, fav: { cl: true }, holo: null, shine: 0, ctx: null, gone: {}, undoId: null, press: null, editId: null, editOut: false, edits: {}, saved: null };
+this.flipKey = 'flip'; this.n = 3;
+this.sx = null; this.sy = null; this.moved = false;
+}
+go(step) {
+var n = this.n || 1, t = (Math.min(this.state.top, n - 1) + step + n) % n;
+this.setState({ top: t, dx: 0, dy: 0, drag: false, axis: null, flip: {}, shine: (this.state.shine || 0) + step * 40 });
+}
+openCtx(id, el, w) {
+var root = el && el.closest ? el.closest('[data-ctxroot]') : null, r, R, sc = 1, x = 70, y = 200, h = w * 212 / 300;
+if (root) { r = el.getBoundingClientRect(); R = root.getBoundingClientRect(); sc = R.width / 390 || 1; x = (r.left - R.left) / sc; y = (r.top - R.top) / sc; w = r.width / sc; h = r.height / sc; if (this.state.press) { var cx = x + w / 2, cy = y + h / 2; w /= 0.95; h /= 0.95; x = cx - w / 2; y = cy - h / 2; } }
+var MW = 250, MH = this.canEdit ? 298 : 250, lift = h * 0.04, below = y + h + lift + 14, mx, my, oy;
+if (below + MH <= 824) { my = below; oy = 'top'; } else { my = Math.max(16, y - lift - 14 - MH); oy = 'bottom'; }
+var left = x + w / 2 < 195;
+mx = left ? Math.max(16, x) : Math.min(390 - 16 - MW, x + w - MW);
+clearTimeout(this.lp);
+this.moved = true;
+this.startY = null; this.sx = null;
+this.setState({ ctx: id, ctxPos: { x: x, y: y, w: w, mx: mx, my: my, origin: oy + ' ' + (left ? 'left' : 'right') }, press: null });
+}
+ctxVals(bib, s) {
+var self = this, on = !!(bib && s.ctx), p = s.ctxPos || {}, fav = on && !!s.fav[bib.id];
+var close = function () { clearTimeout(self.lp2); self.setState({ ctx: null }); };
+var STAR = 'M12 3.5L14.6 9L20.5 9.6L16 13.6L17.3 19.5L12 16.5L6.7 19.5L8 13.6L3.5 9.6L9.4 9Z';
+var items = !on ? [] : [
+{ label: fav ? 'Aus Favoriten entfernen' : 'Zu Favoriten', d: fav ? STAR + 'M3.5 3.5L20.5 20.5' : STAR, act: function () { self.ctxFav(bib.id); } },
+{ label: 'Umdrehen', d: 'M4 12A8 8 0 0 1 18 6.5M18 3V7H14M20 12A8 8 0 0 1 6 17.5M6 21V17H10', act: function () { var f = Object.assign({}, self.state[self.flipKey]); f[bib.id] = !f[bib.id]; var o = { ctx: null }; o[self.flipKey] = f; self.setState(o); } },
+{ label: 'Bearbeiten', d: 'M4 20H8L19 9L15 5L4 16ZM13 7L17 11', act: function () { clearTimeout(self.lp2); self.setState({ ctx: null, editId: bib.id, editOut: false }); } },
+{ label: 'Teilen', d: 'M12 3V15M7.5 7.5L12 3L16.5 7.5M8 11H6V21H18V11H16', act: close },
+].concat(self.canEdit ? [{ label: 'Sammlung bearbeiten', d: 'M4 4H10V10H4ZM14 4H20V10H14ZM4 14H10V20H4ZM14 14H20V20H14Z', act: function () { clearTimeout(self.lp2); self.setState({ ctx: null, editing: true, flipped: {} }); } }] : []).concat([
+{ label: 'Löschen', d: 'M4 7H20M9 7V4H15V7M6 7L7 21H17L18 7M10 11V17M14 11V17', danger: true, sep: true, act: function () { self.ctxDelete(bib.id); } }
+]).map(function (a, i) { return { label: a.label, d: a.d, fill: 'none', act: a.act, color: a.danger ? '#FF453A' : '#ffffff', bt: a.sep ? '8px solid rgba(0, 0, 0, 0.22)' : (i ? '0.5px solid rgba(255, 255, 255, 0.1)' : '0') }; });
+return {
+ctxOn: on, ctxId: on ? bib.id : 'cl', ctxName: on ? bib.name : '', ctxFav: fav, ctxFlipped: on && !!s[self.flipKey][bib.id],
+ctxX: String(Math.round(p.x || 0)), ctxY: String(Math.round(p.y || 0)), ctxW: String(Math.round(p.w || 150)),
+ctxMX: String(Math.round(p.mx || 0)), ctxMY: String(Math.round(p.my || 0)), ctxOrigin: p.origin || 'top left',
+ctxItems: items, closeCtx: close,
+editOn: !!s.editId, editSeed: s.editId ? self.editSeed(s.editId) : null, editCls: s.editOut ? 'editOut' : 'editIn',
+doneCb: function (d) { var id = self.state.editId, e = Object.assign({}, self.state.edits), f = Object.assign({}, self.state.fav), was = !!f[id]; e[id] = d; f[id] = !!d.fav; self.setState({ edits: e, fav: f, editOut: true }); setTimeout(function () { self.setState({ editId: null, editOut: false, saved: id, holo: null }); if (d.fav && !was) { setTimeout(function () { self.setState({ holo: id }); }, 60); clearTimeout(self.ht); self.ht = setTimeout(function () { self.setState({ holo: null }); }, 1400); } }, 300); clearTimeout(self.svt); self.svt = setTimeout(function () { self.setState({ saved: null }); }, 1500); },
+cancelCb: function () { self.setState({ editOut: true }); setTimeout(function () { self.setState({ editId: null, editOut: false }); }, 300); },
+ctxCustom: !!(on && s.edits[bib.id]), ctxNum: on && s.edits[bib.id] ? s.edits[bib.id].numFull : '', ctxRunner: on && s.edits[bib.id] ? s.edits[bib.id].name : '', ctxTime: on && s.edits[bib.id] ? s.edits[bib.id].time : '', ctxUp: function () { clearTimeout(self.lp2); },
+undoOn: !!s.undoId, undo: function () { var g = Object.assign({}, self.state.gone); delete g[self.state.undoId]; clearTimeout(self.ut); self.setState({ gone: g, undoId: null }); }
+};
+}
+editSeed(id) {
+var SEEDS = { kh: { dy: 2025, dm: 4, dd: 18, race: 'kh', dist: 0, num: '6943', tH: '1', tM: '29', tS: '17' }, cl: { dy: 2025, dm: 2, dd: 23, race: 'cl', dist: 0, num: '3228', tH: '', tM: '18', tS: '54' }, dm: { dy: 2024, dm: 9, dd: 27, race: 'dm', dist: 2, num: '10739', tH: '', tM: '40', tS: '19' } };
+var e = this.state.edits[id] || {};
+return Object.assign({}, SEEDS[id], e.num !== undefined ? { num: e.num, tH: e.tH, tM: e.tM, tS: e.tS, name: e.name } : {}, { fav: !!this.state.fav[id] });
+}
+bibEdit(id) { var e = this.state.edits[id]; return e ? { custom: true, num: e.numFull, runner: e.name, time: e.time } : { custom: false, num: '', runner: '', time: '' }; }
+ctxFav(id) {
+var self = this, f = Object.assign({}, this.state.fav); f[id] = !f[id];
+this.setState({ ctx: null, fav: f, holo: null });
+if (f[id]) { setTimeout(function () { self.setState({ holo: id }); }, 60); clearTimeout(self.ht); self.ht = setTimeout(function () { self.setState({ holo: null }); }, 1350); }
+}
+ctxDelete(id) {
+var self = this, g = Object.assign({}, this.state.gone); g[id] = true;
+this.setState({ ctx: null, gone: g, undoId: id });
+clearTimeout(this.ut); this.ut = setTimeout(function () { self.setState({ undoId: null }); }, 4500);
+}
+renderVals() {
+var self = this, s = this.state, TH = 44;
+var bibs = [
+{ id: 'kh', name: 'Halbmarathon Chemnitz', line: '18.05.2025 | 21,1 km' },
+{ id: 'cl', name: 'Citylauf Dresden', line: '23.03.2025 | 5 km' },
+{ id: 'dm', name: 'Viertelmarathon Dresden', line: '27.10.2024 | 10,55 km' }
+];
+var all = bibs, n = 0;
+bibs = bibs.filter(function (b) { return !s.gone[b.id]; });
+n = bibs.length; this.n = n;
+var top = Math.max(0, Math.min(s.top, n - 1));
+var pull = s.axis === 'y' ? Math.max(-70, Math.min(0, s.dy)) : 0;
+var k = Math.min(1, -pull / TH), will = -pull >= TH;
+var topId = n ? bibs[top].id : '', topFav = !!s.fav[topId];
+var cards = bibs.map(function (b, i) {
+var p = (i - top + n) % n, pr = p === 0 && s.press === b.id ? 0.95 : 1;
+var dx = p === 0 && s.axis === 'x' ? s.dx : 0;
+var dy = p === 0 ? pull : 0;
+var rot = p === 0 ? dx * 0.05 : (p === 1 ? -4 : 3.5);
+return {
+id: b.id, flipped: !!s.flip[b.id], isFav: !!s.fav[b.id], holo: s.holo === b.id,
+label: b.name + ', antippen zum Umdrehen, seitlich wischen zum Blättern, nach oben ziehen für Favorit, lange drücken für mehr',
+t: 'translate(-50%, -50%) translateX(' + (dx + (p === 1 ? -10 : p === 2 ? 12 : 0)) + 'px) translateY(' + (dy - p * 22) + 'px) scale(' + (1 - p * 0.08) * pr + ') rotate(' + rot + 'deg)',
+z: String(30 - p),
+op: s.ctx === b.id ? '0' : '1',
+rot: String(rot),
+custom: self.bibEdit(b.id).custom, num: self.bibEdit(b.id).num, runner: self.bibEdit(b.id).runner, time: self.bibEdit(b.id).time,
+ctx: function (e) { e.preventDefault(); self.openCtx(b.id, e.currentTarget, 300); },
+tr: (p === 0 && s.drag) ? (s.press === b.id ? 'transform 0.45s ease' : 'none') : 'transform 0.45s cubic-bezier(0.3, 1.2, 0.4, 1)',
+pe: p === 0 ? 'auto' : 'none',
+hintOpacity: String(p === 0 && s.axis === 'y' ? k : 0),
+hintScale: String(0.6 + k * 0.5),
+hintColor: (s.fav[b.id] ? !will : will) ? '#ffffff' : '#8a8a99',
+hintFill: (s.fav[b.id] ? !will : will) ? '#ffffff' : 'none',
+tap: function () { if (self.moved) { self.moved = false; return; } var f = Object.assign({}, self.state.flip); f[b.id] = !f[b.id]; self.setState({ flip: f }); },
+down: function (e) { var el = e.currentTarget; clearTimeout(self.lp); self.lp = setTimeout(function () { self.openCtx(b.id, el, 300); }, 480); self.sx = e.clientX; self.sy = e.clientY; self.moved = false; try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {} self.setState({ drag: true, dx: 0, dy: 0, axis: null, press: b.id }); },
+move: function (e) {
+if (self.sx === null) return;
+var ddx = e.clientX - self.sx, ddy = e.clientY - self.sy, ax = self.state.axis;
+if (!ax && (Math.abs(ddx) > 8 || Math.abs(ddy) > 8)) { ax = (Math.abs(ddy) > Math.abs(ddx) && ddy < 0) ? 'y' : 'x'; self.moved = true; clearTimeout(self.lp); }
+self.setState({ press: ax ? null : self.state.press, axis: ax, dx: ddx, dy: ddy, shine: ax === 'x' ? (self.state.shine || 0) + (ddx - self.state.dx) * 0.3 : self.state.shine });
+},
+up: function () {
+clearTimeout(self.lp);
+if (self.sx === null) return;
+self.sx = null;
+var st = self.state;
+if (st.axis === 'x' && Math.abs(st.dx) > 70) { self.go(st.dx < 0 ? 1 : -1); return; }
+if (st.axis === 'y' && -st.dy >= TH) {
+var f = Object.assign({}, st.fav); f[b.id] = !f[b.id];
+self.setState({ fav: f, drag: false, dx: 0, dy: 0, axis: null, holo: null, press: null });
+if (f[b.id]) { setTimeout(function () { self.setState({ holo: b.id }); }, 30); clearTimeout(self.ht); self.ht = setTimeout(function () { self.setState({ holo: null }); }, 1300); }
+return;
+}
+self.setState({ drag: false, dx: 0, dy: 0, axis: null, press: null });
+}
+};
+});
+var cb = all.filter(function (b) { return b.id === s.ctx; })[0];
+return Object.assign(this.ctxVals(cb, s), {
+cards: cards,
+shine: String(Math.round(Math.abs((s.shine || 0) * 0.35) % 100)),
+onHover: function (e) { if (self.state.drag) return; self.setState({ shine: Math.round((e.clientX + e.clientY) * 0.3) }); },
+starW: topFav ? '20' : '0',
+starO: topFav ? '1' : '0',
+starS: topFav ? '1' : '0.2',
+starR: topFav ? '0' : '-90',
+plainO: topFav ? '0' : '1',
+holoO: topFav ? '1' : '0',
+line: n ? bibs[top].line : 'Noch keine Startnummern',
+count: (top + 1) + ' von ' + n,
+dots: bibs.map(function (b, i) { return { bg: i === top ? '#ffffff' : '#3a3a44' }; }),
+prev: function () { self.go(-1); },
+next: function () { self.go(1); }
+});
+}
+}
+</script>
+</body>
+</html>
