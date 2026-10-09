@@ -74,7 +74,9 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 ### Glanz auf den Startnummern
 
 - Über jeder Startnummer liegt ein schräger Lichtstreifen mit höchstens 10 Prozent Weiß, genau in der Papierform (Löcher bleiben frei).
-- Er wandert beim Scrollen, Blättern und Bewegen mit, im Menü läuft er im Takt des Wippens hin und her.
+- Das Licht fällt immer aus derselben Richtung: Der Streifen hat auf dem Bildschirm immer denselben Winkel, egal wie schräg die Karte liegt (im Stapel, beim Wischen, beim Wackeln). Er dreht sich also nicht mit der Karte mit.
+- Er hängt nicht am Hovern oder Scrollen, sondern liegt fest an einer Stelle, vorne wie hinten.
+- Nur wenn die Karte im Menü um die senkrechte Achse wippt, gleitet der Glanz leicht mit, wie eine echte Spiegelung.
 
 ### Erfolge (dritter Reiter, Idee vom 09.10.2026)
 
