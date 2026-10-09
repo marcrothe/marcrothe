@@ -88,6 +88,16 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Noch besser: QR Code im Startbeutel, scannen, und die Startnummer ist sofort in der App.
 - Für Teilnehmer von Partnerläufen kostenlos. Gutes Argument für Veranstalter, bringt Nutzer.
 
+## Testphase mit Athletics Team Dresden
+
+Idee (Marc, 09.10.2026): Ein junger Laufclub in Dresden als erste Testgruppe. Viele Mitglieder haben schon viele Startnummern.
+
+1. **Phase 1, noch ohne App:** 5 bis 10 Läufer schicken Fotos ihrer Startnummern (gerade von vorn). Marc baut daraus mit Claude die Vorlagen. Jeder bekommt seine Sammlung als Webseite zum Durchwischen und gibt Rückmeldung.
+2. **Phase 2, App im Test:** Über TestFlight (Apples kostenlose Testverteilung) scannen die Tester selbst. Hier zeigt sich, wie gut das Erkennen wirklich klappt.
+3. **Was wir lernen:** welche Läufe am häufigsten vorkommen (Startbibliothek für Dresden und Sachsen), wie lange eine Vorlage dauert, wie gut die Erkennung ist, ob Favoriten und Holo ankommen, ob jemand für den Scan zahlen würde.
+4. **Dank an die Tester:** Scan dauerhaft kostenlos, Nennung als erste Tester in der App.
+5. **Datenschutz:** Auf den Fotos stehen Namen. Vorher kurz zustimmen lassen, Fotos nur für die Vorlagen nutzen und danach löschen.
+
 ## Bezahlmodell
 
 Grundsatz (Marc, 09.10.2026): Die App ist kostenlos. Bezahlt wird nur der Komfort, eine Startnummer per Foto automatisch einzuscannen. Damit unterstützen Nutzer die laufenden Kosten. Botschaft nach außen: „Ich will hier nicht das große Geld machen. Alles ist frei, nur der Scan kostet ein bisschen.“
