@@ -55,6 +55,26 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Holo bewegt sich nie von selbst, nur leicht beim Scrollen.
 - Entfernen ist animiert: Stern schrumpft und dreht sich weg, Text gleitet zurück in die Mitte, Holo blendet aus.
 
+### Erfolge (dritter Reiter, Idee vom 09.10.2026)
+
+- Die Leiste unten bekommt einen dritten Reiter, zum Beispiel „Erfolge“ mit Pokal Symbol: Start, Sammlung, Erfolge, daneben das Plus.
+- Keep it simple. Oben groß die Zahl aller Läufe, darunter je Kategorie:
+  - Marathons (42k)
+  - Halbmarathons (21k)
+  - 10k
+  - 5k
+- Darunter Trophäen für Meilensteine, zum Beispiel erste Startnummer, 10 Startnummern, erster Halbmarathon, erster Marathon, Läufe in 5 Städten. Noch nicht erreichte Trophäen grau, erreichte mit Holo.
+- Alles wird aus der Sammlung berechnet, nichts muss extra eingetragen werden.
+
+### Feier nach dem Scannen (Idee vom 09.10.2026)
+
+- Ist eine neue Startnummer erkannt, kommt erst eine große Vorschau über den ganzen Bildschirm.
+- Die Startnummer fliegt herein, dreht sich einmal um sich selbst (Vorderseite, Rückseite, wieder Vorderseite) und landet groß in der Mitte.
+- Dazu richtig Feier: „Glückwunsch!“, Konfetti oder Holo Funken, und eine Zeile wie „Startnummer Nr. 12 in deiner Sammlung“ oder „Dein erster Halbmarathon“.
+- Wenn eine Trophäe neu erreicht wurde, erscheint sie direkt mit.
+- Ein Tipp auf „Zur Sammlung“ lässt die Startnummer in den Stapel fliegen.
+- Muss sich vom Holo der Favoriten und von der Enthüllung einer fertigen Vorlage unterscheiden.
+
 ## Hinzufügen per Foto
 
 1. Plus antippen, Kamera öffnet sich.
