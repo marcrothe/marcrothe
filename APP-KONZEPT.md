@@ -66,6 +66,19 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Darunter Trophäen für Meilensteine, zum Beispiel erste Startnummer, 10 Startnummern, erster Halbmarathon, erster Marathon, Läufe in 5 Städten. Noch nicht erreichte Trophäen grau, erreichte mit Holo.
 - Alles wird aus der Sammlung berechnet, nichts muss extra eingetragen werden.
 
+### Statistik auf der Startseite (umgesetzt im Entwurf, 09.10.2026)
+
+- Über dem Stapel steht eine schlichte Statistik: groß die Zahl aller Läufe („3 Läufe insgesamt“), rechts daneben 42k, 21k, 10k, 5k mit ihrer Anzahl. Kategorien ohne Lauf stehen dunkelgrau.
+- Die Trophäen können trotzdem einen eigenen Reiter bekommen, oder als Zeile unter der Statistik starten.
+
+### Läufe in der Nähe (Idee für später, 09.10.2026)
+
+- Die App empfiehlt passende Läufe in der Region, zum Beispiel „Nächster Lauf in Dresden: Citylauf am 21.03.2027“.
+- Die Region ergibt sich aus den Städten der gesammelten Startnummern, ganz ohne Standortfreigabe. Optional zusätzlich der Standort.
+- Passend zur Sammlung: Wer viele 10k hat, sieht eher 10k Läufe.
+- Vor allem für Partnerläufe gedacht, also als Teil einer Kooperation. Klar als Empfehlung gekennzeichnet, ruhig gestaltet und nie auf den Startnummern selbst (dort bleibt es ohne Sponsoren Hinweise, siehe `STARTNUMMERN.md`).
+- Möglicher Ablauf mit Partner: Anmeldung zum Lauf direkt verlinken, nach dem Lauf Startnummer per QR Code importieren.
+
 ### Feier nach dem Scannen (Idee vom 09.10.2026)
 
 - Ist eine neue Startnummer erkannt, kommt erst eine große Vorschau über den ganzen Bildschirm.
