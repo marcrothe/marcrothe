@@ -98,7 +98,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - **Rekorde:** längster Lauf, längste Laufzeit, schnellstes Tempo (min/km), meiste Läufe in einem Jahr, Werte in HN Black Ext.
 - **Zahlen:** Startnummern, Wettkampf Kilometer, Städte, Jahre aktiv.
 - **Sammlungen** (nur echte Sets): Alle vier Distanzen (mit Kästchen 5K, 10K, HM, M), erster Halbmarathon, erster Marathon, Heimspiel (5 Läufe in der eigenen Stadt). Geschafft: Holo Ring um das Symbol, offen: grauer Ring und „2 von 5“.
-- Annahme im Entwurf: Der Viertelmarathon (10,55 km) zählt nicht als 10K, nur bei Rekorden und Zahlen. Die Kategorie kommt aus der Vorlage.
+- Entschieden (Marc, 09.10.2026): Der Viertelmarathon (10,55 km) zählt nicht als 10K, nur bei Rekorden und Zahlen. Die Kategorie kommt aus der Vorlage.
 - Ohne eingetragene Zeit zählt eine Startnummer nicht für Bestzeiten.
 
 ### Statistik auf der Startseite (getestet und vorerst verworfen, 09.10.2026)
