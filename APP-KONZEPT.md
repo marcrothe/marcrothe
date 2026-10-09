@@ -55,6 +55,15 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Holo bewegt sich nie von selbst, nur leicht beim Scrollen.
 - Entfernen ist animiert: Stern schrumpft und dreht sich weg, Text gleitet zurück in die Mitte, Holo blendet aus.
 
+### Menü bei langem Drücken (09.10.2026)
+
+- Lange auf eine Startnummer drücken (im Stapel und in der Sammlung, am Rechner auch Rechtsklick) öffnet ein Glasmenü wie bei Apple.
+- Beim Drücken gibt die Startnummer leicht nach, dann hebt sie sich an, der Rest wird abgedunkelt und unscharf.
+- Einträge: Zu Favoriten bzw. Aus Favoriten entfernen, Umdrehen, Bearbeiten, Teilen, Löschen (rot, mit Abstand darunter).
+- Löschen zeigt unten kurz eine Glas Meldung mit „Rückgängig“.
+- Das Menü ist auch der sichtbare zweite Weg zum Favoriten, neben dem Hochziehen.
+- Bearbeiten und Teilen haben noch keinen eigenen Bildschirm.
+
 ### Erfolge (dritter Reiter, Idee vom 09.10.2026)
 
 - Die Leiste unten bekommt einen dritten Reiter, zum Beispiel „Erfolge“ mit Pokal Symbol: Start, Sammlung, Erfolge, daneben das Plus.
