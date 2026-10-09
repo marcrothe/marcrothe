@@ -114,7 +114,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 ## Hinzufügen (eigene Seite, Entwurf vom 09.10.2026, zweite Fassung)
 
 - Der Reiter „Hinzufügen“ ist eine ganz normale Seite. Sie zeigt sofort ein Formular wie „Neues Ereignis“ im Apple Kalender, zuerst leer.
-- Oben steht als Platzhalter eine **klare, glatte Glasplatte mit vier Löchern** in Startnummernform (keine Körnung), mit Glanzstreifen. Alles, was man einträgt, erscheint sofort darauf: Lauf und Datum oben, Nummer groß in der Mitte, Name darunter, Strecke unten links, Zeit unten rechts. Die Platte wippt dabei langsam um die senkrechte Achse wie eine lange gedrückte Startnummer, der Glanz gleitet im selben Takt mit. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um. Beim Einstellen der Zeit dreht er sich von selbst auf die Rückseite, wo die Zeit steht, beim Tippen von Nummer oder Name wieder nach vorn.
+- Oben steht als Platzhalter eine **klare, glatte Glasplatte mit vier Löchern** in Startnummernform (keine Körnung), mit Glanzstreifen. Die Ränder der vier Löcher sind Glaskanten wie der Außenrand: oben links heller, und wenn der Glanz vorbeizieht, leuchten Außenrand und Lochränder an dieser Stelle mit auf. Alles, was man einträgt, erscheint sofort darauf: Lauf und Datum oben, Nummer groß in der Mitte, Name darunter, Strecke unten links, Zeit unten rechts. Die Platte wippt dabei langsam um die senkrechte Achse wie eine lange gedrückte Startnummer, der Glanz gleitet im selben Takt mit. Sobald ein Lauf mit Vorlage gewählt ist, wird sie durch den echten Nachbau ersetzt, der live die eigene Nummer, den Namen und die Zeit zeigt. Antippen dreht ihn um. Beim Tippen der Zeit dreht er sich von selbst auf die Rückseite, wo die Zeit steht, beim Tippen von Nummer oder Name wieder nach vorn.
 - Zeilen von oben nach unten, die späteren sind ausgegraut, bis das Datum und dann der Lauf feststehen:
   1. **Datum:** Antippen öffnet Scrollräder wie bei Apple (Tag, Monat, Jahr). Kein Kalender.
   2. **Lauf:** zeigt gleich „1 Lauf an diesem Tag“. Antippen klappt die Läufe dieses Tages auf. Darunter „Lauf nicht dabei? Vorlage anfragen“.
@@ -122,7 +122,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
      Beispiel: Beim Europäischen Kulturhauptstadt-Marathon Chemnitz (18.05.2025) gibt es Halbmarathon und Marathon. Beide teilen sich eine Grundvorlage, nur Streckenname, Laufband Text und Präfix der Nummer (H oder M) ändern sich. Nummer und Schrift bleiben mittig.
   4. **Startnummer:** direkt in der Zeile tippen, das Präfix der Vorlage (zum Beispiel H) steht schon davor.
   5. **Name:** automatisch aus dem Profil, nur wenn die Vorlage einen Namen zeigt (MARC oder Marc), sonst „nicht aufgedruckt“.
-  6. **Zeit:** optional, Scrollräder für Stunden, Minuten und Sekunden. So sind unmögliche Werte wie 99 Sekunden ausgeschlossen.
+  6. **Zeit:** optional, direkt in die Zeile tippen, das geht schneller als Räder. Nur Ziffern reichen: 12917 wird 1:29:17, 4519 wird 45:19. Minuten oder Sekunden über 59 werden rot markiert, dann lässt sich nicht speichern. Beim Tippen dreht sich die Vorschau auf die Rückseite mit der Zeit.
   - Das Jahr ergibt sich aus dem Datum.
 - „Zur Sammlung hinzufügen“ wird aktiv, sobald Datum, Lauf, Strecke und Startnummer da sind.
 - **Aus Foto:** Glasknopf oben rechts. Foto aus Fotos wählen, „Wird erkannt …“, danach dasselbe Formular schon ausgefüllt und mit „erkannt“ markiert.
