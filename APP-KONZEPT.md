@@ -124,7 +124,8 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
   5. **Name:** automatisch aus dem Profil, nur wenn die Vorlage einen Namen zeigt (MARC oder Marc), sonst „nicht aufgedruckt“.
   6. **Zeit:** optional, drei kleine Felder für Stunden, Minuten und Sekunden (h : mm : ss), Ziffern eintippen, nach zwei Ziffern springt der Cursor ins nächste Feld. Minuten oder Sekunden über 59 werden rot, dann lässt sich nicht speichern. Beim Tippen dreht sich die Vorschau auf die Rückseite mit der Zeit.
   - Das Jahr ergibt sich aus dem Datum.
-- „Zur Sammlung hinzufügen“ wird aktiv, sobald Datum, Lauf, Strecke und Startnummer da sind.
+- „Zur Sammlung hinzufügen“ wird aktiv, sobald Datum, Lauf, Strecke und Startnummer da sind. Der Knopf ist dunkel mit roter Schrift (#FF123E), keine rote Fläche.
+- Auch der fertige Nachbau in der Vorschau wippt langsam um die senkrechte Achse, mit mitlaufendem Glanz, genau wie beim langen Drücken.
 - **Aus Foto:** Glasknopf oben rechts. Foto aus Fotos wählen, „Wird erkannt …“, danach dasselbe Formular schon ausgefüllt und mit „erkannt“ markiert.
 - Technik: Apples Texterkennung (Vision und VisionKit, Live Text) läuft auf dem Gerät, mit der Kamera und mit Fotos aus der Mediathek, und kostet nichts.
 
