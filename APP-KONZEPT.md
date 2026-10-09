@@ -135,11 +135,13 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - **Aus Foto:** Glasknopf oben rechts. Foto aus Fotos wählen, „Wird erkannt …“, danach dasselbe Formular schon ausgefüllt und mit „erkannt“ markiert.
 - Technik: Apples Texterkennung (Vision und VisionKit, Live Text) läuft auf dem Gerät, mit der Kamera und mit Fotos aus der Mediathek, und kostet nichts.
 
-### Bearbeiten (Idee vom 09.10.2026, noch nicht gebaut)
+### Bearbeiten (09.10.2026, im Entwurf gebaut)
 
 - In der Sammlung lange drücken, „Bearbeiten“ wählen: Es öffnet sich dieselbe Ansicht wie beim Hinzufügen, schon ausgefüllt, mit der echten Startnummer oben.
 - Oben „Bearbeiten“ statt „Hinzufügen“, Knopf „Fertig“ statt „Zur Sammlung hinzufügen“, ohne große Animation, nur ein kurzes Zurückfliegen in die Sammlung.
 - Typischer Fall: Zeit nachtragen, Tippfehler in der Nummer korrigieren.
+- Im Entwurf: In Start und Sammlung lange drücken (am Rechner Rechtsklick), „Bearbeiten“. Datum, Lauf und Strecke sind dort fest, änderbar sind Startnummer, Name und Zeit. „Fertig“ übernimmt die Änderung sofort auf die Startnummer, die kurz aufploppt. „Abbrechen“ verwirft.
+- Einen anderen Lauf wählen geht beim Bearbeiten nicht. Dafür löscht man die Startnummer und fügt sie neu hinzu.
 
 ## Hinzufügen per Foto (Technik im Hintergrund)
 
