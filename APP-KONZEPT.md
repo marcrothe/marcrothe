@@ -122,7 +122,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
      Beispiel: Beim Europäischen Kulturhauptstadt-Marathon Chemnitz (18.05.2025) gibt es Halbmarathon und Marathon. Beide teilen sich eine Grundvorlage, nur Streckenname, Laufband Text und Präfix der Nummer (H oder M) ändern sich. Nummer und Schrift bleiben mittig.
   4. **Startnummer:** direkt in der Zeile tippen, das Präfix der Vorlage (zum Beispiel H) steht schon davor.
   5. **Name:** automatisch aus dem Profil, nur wenn die Vorlage einen Namen zeigt (MARC oder Marc), sonst „nicht aufgedruckt“.
-  6. **Zeit:** optional, direkt in die Zeile tippen, das geht schneller als Räder. Nur Ziffern reichen: 12917 wird 1:29:17, 4519 wird 45:19. Minuten oder Sekunden über 59 werden rot markiert, dann lässt sich nicht speichern. Beim Tippen dreht sich die Vorschau auf die Rückseite mit der Zeit.
+  6. **Zeit:** optional, drei kleine Felder für Stunden, Minuten und Sekunden (h : mm : ss), Ziffern eintippen, nach zwei Ziffern springt der Cursor ins nächste Feld. Minuten oder Sekunden über 59 werden rot, dann lässt sich nicht speichern. Beim Tippen dreht sich die Vorschau auf die Rückseite mit der Zeit.
   - Das Jahr ergibt sich aus dem Datum.
 - „Zur Sammlung hinzufügen“ wird aktiv, sobald Datum, Lauf, Strecke und Startnummer da sind.
 - **Aus Foto:** Glasknopf oben rechts. Foto aus Fotos wählen, „Wird erkannt …“, danach dasselbe Formular schon ausgefüllt und mit „erkannt“ markiert.
