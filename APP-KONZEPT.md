@@ -145,7 +145,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Oben „Bearbeiten“ statt „Hinzufügen“, Knopf „Fertig“ statt „Zur Sammlung hinzufügen“, ohne große Animation, nur ein kurzes Zurückfliegen in die Sammlung.
 - Typischer Fall: Zeit nachtragen, Tippfehler in der Nummer korrigieren.
 - Im Entwurf: In Start und Sammlung lange drücken (am Rechner Rechtsklick), „Bearbeiten“. Datum, Lauf und Strecke sind dort fest, änderbar sind Startnummer, Name und Zeit. „Fertig“ übernimmt die Änderung sofort auf die Startnummer, die kurz aufploppt. „Abbrechen“ verwirft.
-- Beim Bearbeiten gibt es zusätzlich die Zeile **Favorit** mit einem Stern wie bei Apple (leerer grauer Umriss, beim Antippen füllt er sich zart holo und ploppt kurz). Ist die Startnummer ein Favorit, ist er gefüllt und die Vorschau zeigt den Holo Rand und hinten den Holo Stern. Wird sie neu zum Favoriten, läuft beim Zurückkehren der Holo Wisch.
+- Beim Bearbeiten gibt es zusätzlich die Zeile **Favorit** mit dem Stern aus Apples Symbolen (SF Symbols „star“ und „star.fill“, mit runden Spitzen): grauer Umriss, beim Antippen füllt er sich weiß und ploppt kurz. Ist die Startnummer ein Favorit, ist er gefüllt und die Vorschau zeigt den Holo Rand und hinten den Holo Stern. Wird sie neu zum Favoriten, läuft beim Zurückkehren der Holo Wisch.
 - Einen anderen Lauf wählen geht beim Bearbeiten nicht. Dafür löscht man die Startnummer und fügt sie neu hinzu.
 
 ## Hinzufügen per Foto (Technik im Hintergrund)
