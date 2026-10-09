@@ -59,11 +59,22 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 
 - Lange auf eine Startnummer drücken (im Stapel und in der Sammlung, am Rechner auch Rechtsklick) öffnet ein Glasmenü wie bei Apple.
 - Beim Drücken gibt die Startnummer leicht nach, dann hebt sie sich an, der Rest wird abgedunkelt und unscharf.
-- Solange das Menü offen ist, dreht sich die angehobene Startnummer langsam um die senkrechte Achse ein paar Grad nach links und rechts (etwa 7 Grad, ein Durchgang etwa 3,6 Sekunden).
+- Solange das Menü offen ist, wippt die angehobene Startnummer flüssig und langsam um die senkrechte Achse, etwa 7 Grad nach links und rechts, ohne Stocken.
 - Einträge: Zu Favoriten bzw. Aus Favoriten entfernen, Umdrehen, Bearbeiten, Teilen, Löschen (rot, mit Abstand darunter).
 - Löschen zeigt unten kurz eine Glas Meldung mit „Rückgängig“.
 - Das Menü ist auch der sichtbare zweite Weg zum Favoriten, neben dem Hochziehen.
 - Bearbeiten und Teilen haben noch keinen eigenen Bildschirm.
+
+### Wackelmodus in der Sammlung (wie bei den Apps auf dem iPhone)
+
+- Hält man nach dem Aufgehen des Menüs weiter gedrückt (oder tippt „Sammlung bearbeiten“), wackeln alle Startnummern der Sammlung leicht.
+- Jede Startnummer bekommt oben links ein kleines Glas Minus zum Entfernen, danach kommt die Glas Meldung mit „Rückgängig“.
+- Oben rechts steht dann statt des Zahnrads „Fertig“ als Glasknopf.
+
+### Glanz auf den Startnummern
+
+- Über jeder Startnummer liegt ein schräger Lichtstreifen mit höchstens 10 Prozent Weiß, genau in der Papierform (Löcher bleiben frei).
+- Er wandert beim Scrollen, Blättern und Bewegen mit, im Menü läuft er im Takt des Wippens hin und her.
 
 ### Erfolge (dritter Reiter, Idee vom 09.10.2026)
 
