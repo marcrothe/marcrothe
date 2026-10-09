@@ -118,6 +118,7 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Die Startnummer erscheint erst, wenn man eine Ziffer tippt. Auch das Präfix (zum Beispiel H) kommt erst mit der ersten Ziffer.
 - **Schrift passt sich an:** Jedes Feld der Vorlage hat eine feste Breite (Nummer, Name, Zeit auf der Rückseite, Strecke). Je länger der Text, desto kleiner die Schrift, damit er immer hineinpasst und auf derselben Grundlinie bleibt. Beispiel Citylauf: MARC groß, MAXIMILIAN kleiner.
 - Start und Sammlung zeigen immer die fertigen Startnummern. Die einsetzbaren Felder gibt es nur beim Hinzufügen.
+- **Rückseite immer gleich:** Vorne ist jede Startnummer individuell, hinten haben alle dasselbe Design: helles Papier, oben der Laufname klein in HN Black Ext, darunter groß die Zeit in HN Black Ext, darunter grau „offizielle Zeit“, alles als Block mittig. Bei Favoriten oben der Holo Stern.
 - Zeilen von oben nach unten, die späteren sind ausgegraut, bis das Datum und dann der Lauf feststehen:
   1. **Datum:** Antippen öffnet Scrollräder wie bei Apple (Tag, Monat, Jahr). Kein Kalender.
   2. **Lauf:** zeigt gleich „1 Lauf an diesem Tag“. Antippen klappt die Läufe dieses Tages auf. Darunter „Lauf nicht dabei? Vorlage anfragen“.
