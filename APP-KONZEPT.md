@@ -93,6 +93,14 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Darunter Trophäen für Meilensteine, zum Beispiel erste Startnummer, 10 Startnummern, erster Halbmarathon, erster Marathon, Läufe in 5 Städten. Noch nicht erreichte Trophäen grau, erreichte mit Holo.
 - Alles wird aus der Sammlung berechnet, nichts muss extra eingetragen werden.
 
+**Entwurf der Seite (09.10.2026)**
+- **Bestzeiten:** vier Felder 5K, 10K, Halbmarathon, Marathon. Jedes zeigt die Rückseite der Startnummer mit der besten Zeit (das einheitliche Rückseiten Design), antippen dreht auf die Vorderseite. Darunter Stadt und Datum. Fehlende Strecke: leere Glasplatte mit „Noch offen“.
+- **Rekorde:** längster Lauf, längste Laufzeit, schnellstes Tempo (min/km), meiste Läufe in einem Jahr, Werte in HN Black Ext.
+- **Zahlen:** Startnummern, Wettkampf Kilometer, Städte, Jahre aktiv.
+- **Sammlungen** (nur echte Sets): Alle vier Distanzen (mit Kästchen 5K, 10K, HM, M), erster Halbmarathon, erster Marathon, Heimspiel (5 Läufe in der eigenen Stadt). Geschafft: Holo Ring um das Symbol, offen: grauer Ring und „2 von 5“.
+- Annahme im Entwurf: Der Viertelmarathon (10,55 km) zählt nicht als 10K, nur bei Rekorden und Zahlen. Die Kategorie kommt aus der Vorlage.
+- Ohne eingetragene Zeit zählt eine Startnummer nicht für Bestzeiten.
+
 ### Statistik auf der Startseite (getestet und vorerst verworfen, 09.10.2026)
 
 - Getestet: über dem Stapel groß die Zahl aller Läufe, darunter 42k, 21k, 10k, 5k, alles mittig. Hat Marc nicht gefallen und ist wieder raus.
