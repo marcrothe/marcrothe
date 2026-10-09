@@ -66,10 +66,10 @@ Eine iPhone App, in der Läufer alle ihre Startnummern sammeln, als schöne, ein
 - Darunter Trophäen für Meilensteine, zum Beispiel erste Startnummer, 10 Startnummern, erster Halbmarathon, erster Marathon, Läufe in 5 Städten. Noch nicht erreichte Trophäen grau, erreichte mit Holo.
 - Alles wird aus der Sammlung berechnet, nichts muss extra eingetragen werden.
 
-### Statistik auf der Startseite (umgesetzt im Entwurf, 09.10.2026)
+### Statistik auf der Startseite (getestet und vorerst verworfen, 09.10.2026)
 
-- Über dem Stapel steht eine schlichte Statistik: groß die Zahl aller Läufe („3 Läufe insgesamt“), rechts daneben 42k, 21k, 10k, 5k mit ihrer Anzahl. Kategorien ohne Lauf stehen dunkelgrau.
-- Die Trophäen können trotzdem einen eigenen Reiter bekommen, oder als Zeile unter der Statistik starten.
+- Getestet: über dem Stapel groß die Zahl aller Läufe, darunter 42k, 21k, 10k, 5k, alles mittig. Hat Marc nicht gefallen und ist wieder raus.
+- Vor dem nächsten Versuch erst recherchieren, was gute App Gestaltung ausmacht, und die Startseite dann von Grund auf durchdenken.
 
 ### Läufe in der Nähe (Idee für später, 09.10.2026)
 
